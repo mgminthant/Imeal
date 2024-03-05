@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Finder</title>
+    <!-- icon  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- css  -->
+    <link rel="stylesheet" href="./css/ab.css">
+    <!-- css  -->
+    <link rel="stylesheet" href="./css/home.css">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- css  -->
+    <link rel="stylesheet" href="./css/meal.css">
+    <!-- htmx -->
+    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+</head>
+
+<body>
+    <div id="preloader"></div>
+    <div class="head">
+        <header>
+            <div class="logo">
+                IMeal
+            </div>
+            <div class="btn">
+                <button hx-get="/meal.html" hx-target=".parent">Find</button>
+            </div>
+            <div class="mid">
+                <ul>
+                    <li id="home" hx-get="/home.html" hx-target=".parent">Home</li>
+                    <li id="about" hx-get="/about.html" hx-target=".parent">About</li>
+                </ul>
+                <div class="bot"></div>
+            </div>
+            <div class="humberger">
+                <div class="ds one"></div>
+                <div class="two ds mid"></div>
+                <div class="ds three"></div>
+            </div>
+        </header>
+    </div>
+    <div class="parent" hx-get="/home.html" hx-trigger="load">
+    </div>
+    <div class="res-hum">
+        <p id="home_1" hx-get="/home.html" hx-target=".parent">Home</p>
+        <p id="about_1" hx-get="/about.html" hx-target=".parent" style="margin: 50px 0;">About</p>
+        <button hx-get="/meal.html" hx-target=".parent" id="find">Find</button>
+    </div>
+    <!-- js  -->
+    <script src="./script.js"></script>
+</body>
+
+</html>

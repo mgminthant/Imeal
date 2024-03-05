@@ -1,0 +1,150 @@
+.pare {
+  width: 100%;
+  margin: 0 auto;
+}
+.pare .page {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.pare .page .text {
+  width: 90%;
+  margin: 0 auto;
+  align-self: center;
+}
+.pare .page .about-page {
+  width: 80%;
+}
+.pare .page img {
+  margin: 0 auto;
+}
+.pare button {
+  padding: 8px 15px;
+  border: none;
+  font-size: 16px;
+  border-radius: 15px;
+  color: #fdfdfd;
+  cursor: pointer;
+  background-color: #22d1ee;
+  margin: 0 auto;
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.pare button:hover {
+  box-shadow: 3px 3px 5px #22d1ee;
+}
+.pare button i {
+  margin-left: 5px;
+  font-size: 20px;
+}
+.pare h1 {
+  color: #3d5af1;
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.pare p {
+  font-family: "Inter";
+  opacity: 0.9;
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 22px;
+  text-align: center;
+}
+
+.auth_tech {
+  width: 100%;
+  padding-top: 50px;
+  background-color: rgba(85, 120, 138, 0.46);
+  position: absolute;
+  left: 0;
+}
+.auth_tech .author {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.footer {
+  margin-top: 250px;
+}
+
+.tech {
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.tech div {
+  font-size: 25px;
+  letter-spacing: 2px;
+  display: inline-block;
+  margin: 30px;
+}
+.tech a {
+  color: black;
+}
+
+.middle_tech {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  max-width: 90vw;
+  width: 1400px;
+  margin: 0 auto;
+}
+
+.author-profile {
+  width: 600px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.author-profile .about-author {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: block;
+  border: 5px solid #3d5af1;
+}
+.author-profile p {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.author-profile p .fa-quote-left {
+  transform: translate(-15px, -15px);
+  font-size: 35px;
+  color: white;
+}
+.author-profile .fa-envelope,
+.author-profile .fa-facebook,
+.author-profile .fa-x-twitter {
+  color: white;
+  font-size: 28px;
+  margin: 30px 10px;
+}
+
+.footer-about {
+  text-align: center;
+  color: #fdfdfd;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.footer-about span {
+  color: blue;
+  font-size: 22px;
+  font-family: "Single Day";
+} /*# sourceMappingURL=ab.css.map */
+
+.author-profile i {
+  cursor: pointer;
+}
+
+.author-profile i:hover {
+  transform: scale(1.1);
+}

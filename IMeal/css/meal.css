@@ -1,0 +1,212 @@
+.title {
+  display: flex;
+  justify-content: center;
+  color: #0e153a;
+  margin: 50px 0 30px 0;
+}
+
+.search {
+  max-width: 100%;
+  width: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.search input {
+  width: 60%;
+  padding: 12px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  background-color: #e2f3f5;
+  border-radius: 10px;
+}
+
+.search button,
+#Random {
+  width: 15%;
+  cursor: pointer;
+  position: relative;
+  left: -15px;
+  padding: 13px;
+  border: none;
+  background-color: #22d1ee;
+  color: white;
+  font-size: 15px;
+  top: 0px;
+}
+
+#Random {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  left: -20px;
+  border-left: 1px solid white;
+}
+
+.result {
+  width: 80vw;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  padding: 20px 0;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.result div {
+  position: relative;
+  border: 2px solid #0e153a;
+  text-align: center;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.result div img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.meal-info {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  color: white;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.searchinfo {
+  color: #0e153a;
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px 0 10px 0;
+  display: none;
+}
+
+.result div:hover .meal-info {
+  opacity: 1;
+}
+
+#overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(247, 243, 243, 0.9);
+  display: none;
+  cursor: pointer;
+}
+
+.single-meal-info {
+  width: 650px;
+  position: relative;
+  max-width: 90vw;
+  margin: 0 auto;
+  margin-top: 100px;
+  height: 100vh;
+  overflow: auto;
+  padding: 30px 0;
+}
+
+.single-meal-info:hover {
+  overflow-y: scroll;
+}
+
+.single-meal-info img {
+  width: 400px;
+  max-width: 90%;
+  display: block;
+  margin: 0 auto;
+  border: 2px solid #0e153a;
+  border-radius: 5px;
+}
+
+.mea li {
+  list-style-type: none;
+  font-size: 17px;
+  color: black;
+  background-color: white;
+  display: inline-block;
+  margin: 5px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+h2 {
+  margin: 30px 0;
+}
+
+.single-meal-info strong {
+  font-size: 30px;
+  display: block;
+  margin: 20px 0;
+  color: black;
+}
+
+.single-meal-info p {
+  color: black;
+  word-spacing: 4px;
+  line-height: 35px;
+  font-size: 20px;
+}
+
+.fa-square-xmark {
+  font-size: 23px;
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.add {
+  display: inline-block;
+  opacity: 1;
+  z-index: 2;
+}
+
+.fa-square-xmark:hover {
+  color: red;
+}
+
+@media only screen and (max-width: 500px) {
+  .search input {
+    width: 100%;
+  }
+
+  .search {
+    width: 100%;
+  }
+
+  #search-btn {
+    width: 25%;
+  }
+  .fa-square-xmark {
+    display: inline-block;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0.2em;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
